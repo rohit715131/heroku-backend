@@ -1,0 +1,139 @@
+
+
+ .about_conatiner{
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    margin-bottom: 200px;
+    /* border: 6px solid blue; */
+
+}
+.photo{
+    display: flex;
+    width: 400px;
+    height: 400px;
+}
+.photo {
+    margin-top: 100px;
+    width:100%
+}
+
+.photo>img{
+    border-radius:40px;
+    transition: transform.2s;
+    border: 2px solid black;
+}
+
+.photo>img:hover{
+    transition: var(--transition);
+   
+    
+} 
+
+
+
+
+@media screen and (max-width:768px) {
+  
+    #about{
+        margin-right:100px;
+        /* border:6px solid green */
+    }
+
+    
+    .photo{
+        /* border:6px solid blue; */
+        display: flex;
+        width: 100px;
+        height: 100px;
+    }
+ 
+    
+}
+
+
+@media screen and (max-width:1024px) {
+   
+    .about_conatiner{
+        width: 80%;
+        height: 300px;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        margin-bottom: 400px;
+        gap:20px
+    }
+    .about_cards{
+        display: flex;
+        margin-bottom: 100px;
+        height: 200px;
+        
+    }
+    .photo{
+       width: 300px;
+       height:300px
+    };
+  
+}
+
+/* Media quries (small devices)*/
+
+@media screen and (max-width:480px) {
+
+    .about{
+        margin-top:400px;
+    }
+
+    .about_conatiner{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 60%;
+        height: 300px;
+        margin: auto;
+        margin-bottom: 900px;
+        gap:20px
+    }
+   
+    .about_cards{
+        display: flex;
+        margin-bottom: 100px;
+        height: 200px; 
+    }
+}
+
+.about_cards {
+    margin:3rem 0 1.5rem ;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:1.5rem;
+    margin-bottom: 100px;
+
+    }
+    
+    .card.about_card{
+    text-align: center;
+    }
+    
+    .about_card-icon{
+    font-size:1.3rem;
+    color:var(--color-black);
+    border-radius:var(--border-radius-3);
+    width: fit-content;
+    margin-inline:auto ;
+    padding: 0.6rem;
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+    }
+    
+    .card.about_card:hover .about_card-icon{
+        background: var(--color-primary) ;
+        color: var(--color-white);
+    
+    }
+    
+    .card.about_card h5 {
+        margin: 1rem 0;
+    }
